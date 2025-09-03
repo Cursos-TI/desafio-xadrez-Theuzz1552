@@ -3,6 +3,7 @@
 int main () {
 
     int i = 0;
+    int movimentoCavalo = 1;
 
     printf("\n=>  JOGO DE XADREZ    ");
     printf("\n[JOGADOR] Mova a Torre 5 casas para direita: \n");
@@ -29,7 +30,19 @@ int main () {
         i++;
     } while (i < 8);
 
-    printf("Xeque mate, o [JOGADOR] venceu!\n");
+    // Move o Cavalo em L
+    printf("\n[COMPUTADOR] Mova o Cavalo 2 casas para baixo e 1 para esqueda: \n");
+    int contar = 0;
+    while (contar < movimentoCavalo) // Loop externo (while)
+    {
+        for (int i = 0; i < 2; i++) // Loop interno (for)
+        {
+           printf("Baixo\n"); 
+        }
+        printf("Esquerda\n");
+        contar++;
+    }
+    printf("===Xeque mate, o [COMPUTADOR] venceu!===\n");
     
 return 0;
 }
